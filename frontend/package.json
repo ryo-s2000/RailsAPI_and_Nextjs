@@ -4,6 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "befor_commit": "yarn test && yarn format && yarn lint && yarn type-check",
     "test": "echo 'todo'",
     "format": "npx prettier --write ./src",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
