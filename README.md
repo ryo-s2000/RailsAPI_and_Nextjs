@@ -18,6 +18,8 @@ yarn install
 Setup Backend
 ```
 bundle install
+rails db:migrate
+rails db:seed
 ```
 
 Start Frontend
