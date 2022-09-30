@@ -4,7 +4,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "npx tsc --noEmit",
+    "lint": "eslint --ext .jsx --ext .tsx src"
   },
   "dependencies": {
     "next": "latest",
@@ -15,6 +16,7 @@
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "eslint": "^8.24.0",
     "sass": "^1.55.0",
     "typescript": "^4.8.3"
   }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from 'src/components/utility/Header';
 
 interface CatCategory {
   id: number;
@@ -34,7 +35,7 @@ const IndexPage = () => {
 
   return (
     <div>
-        <h1>ねこねこジェネレーター</h1>
+      <Header></Header>
       <button onClick={handleClick}>きょうのにゃんこ🐱</button>
       <div style={{ marginTop: 8 }}>
         <img src={catImageUrl} width={500} height="auto" />

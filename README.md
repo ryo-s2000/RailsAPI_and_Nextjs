@@ -32,9 +32,14 @@ Start Backend
 rails s -p 3001 -b '0.0.0.0'
 ```
 
-Check JS
+Check Frontend
 ```
-npx tsc --noEmit
+yarn type-check
+yarn lint
+```
+
+Check Backend
+```
 ```
 
 Reset
@@ -45,3 +50,8 @@ docker compose -f docker-compose-dev.yml build --no-cache
 
 URL
 http://localhost:3000
+
+Sqlite GUI
+```
+SQLite Viewer
+```
