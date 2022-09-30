@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'plugins/axios/config'
+import axios from 'plugins/axios/config';
 
 interface Event {
   id: number;
