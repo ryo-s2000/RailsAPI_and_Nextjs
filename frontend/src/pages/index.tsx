@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import Header from 'src/components/utility/Header';
 
 interface CatCategory {
@@ -18,15 +18,13 @@ interface SearchCatImage {
 type SearchCatImageResponse = SearchCatImage[];
 
 const fetchCatImage = async (): Promise<SearchCatImage> => {
-  const res = await fetch("https://api.thecatapi.com/v1/images/search");
+  const res = await fetch('https://api.thecatapi.com/v1/images/search');
   const result = (await res.json()) as SearchCatImageResponse;
   return result[0];
 };
 
 const IndexPage = () => {
-  const [catImageUrl, setCatImageUrl] = useState(
-    "https://cdn2.thecatapi.com/images/bpc.jpg"
-  );
+  const [catImageUrl, setCatImageUrl] = useState('https://cdn2.thecatapi.com/images/bpc.jpg');
 
   const handleClick = async () => {
     const image = await fetchCatImage();
