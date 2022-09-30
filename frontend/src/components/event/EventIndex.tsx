@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'plugins/axios/config'
 
 interface Event {
   id: number;
@@ -13,8 +14,8 @@ interface Event {
 }
 
 const fetchEvents = async (): Promise<Event[]> => {
-  const res = await fetch('http://localhost:3001/api/events');
-  const result = (await res.json()) as Event[];
+  const res = await axios.get('/events');
+  const result = (await res.data) as Event[];
   return result;
 };
 

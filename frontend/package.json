@@ -13,6 +13,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
+    "axios": "^0.27.2",
     "eslint-plugin-react": "^7.31.8",
     "next": "latest",
     "prettier": "^2.7.1",
