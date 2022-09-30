@@ -1,7 +1,13 @@
 import '@styles/globals.scss';
+import Header from 'src/components/utility/Header';
 
-const MyApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+const MainComponent = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <Header></Header>
+      <Component {...pageProps}></Component>
+    </div>
+  );
 };
 
-export default MyApp;
+export default MainComponent;
