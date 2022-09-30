@@ -34,8 +34,7 @@ rails s -p 3001 -b '0.0.0.0'
 
 Check Frontend
 ```
-yarn type-check
-yarn lint
+yarn befor_commit
 ```
 
 Check Backend
