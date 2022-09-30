@@ -4,8 +4,12 @@ import EventIndex from 'src/components/event/EventIndex';
 const IndexPage = () => {
   return (
     <div>
-      <Header></Header>
-      <EventIndex></EventIndex>
+      <Header>
+
+      </Header>
+      <EventIndex>
+
+      </EventIndex>
     </div>
   );
 };
