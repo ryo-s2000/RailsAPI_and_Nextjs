@@ -13,7 +13,9 @@ interface Event {
 }
 
 const fetchEvents = async (): Promise<Event[]> => {
-  const res = await fetch('http://localhost:3001/api/events');
+  const res = await fetch(
+    'http://localhost:3001/api/events'
+    );
   const result = (await res.json()) as Event[];
   return result;
 };
@@ -26,7 +28,9 @@ const IndexPage = () => {
     setEvents(events);
   };
 
-  const listItems = events.map((event) => <li key={event.id}>{event.title}</li>);
+  const listItems = events.map((event) =>
+  <li key={event.id}>{event.title}
+  </li>);
 
   return (
     <div>

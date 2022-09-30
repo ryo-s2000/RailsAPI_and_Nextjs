@@ -8,7 +8,8 @@
     "test": "echo 'todo'",
     "format": "npx prettier --write ./src",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "type-check": "npx tsc --noEmit"
+    "type-check": "npx tsc --noEmit",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.1",
